@@ -7,7 +7,7 @@ const Account = ({ account }) => {
           <tr>
             <th>{name}</th>
             <th></th>
-            <th>{balance}</th>
+            <th>{balance} €</th>
           </tr>
         </thead>
         <tbody>
@@ -15,7 +15,7 @@ const Account = ({ account }) => {
             <tr key={i}>
               <td>{date}</td>
               <td>{description}</td>
-              <td>{amount}</td>
+              <td className="monospace">{`${amount.toFixed(2)}€`}</td>
             </tr>
           ))}
         </tbody>

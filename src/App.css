@@ -59,14 +59,14 @@ header .logged img {
 }
 
 /* Contenu */
+.monospace {
+  font-family: "Courier New", Courier, monospace;
+}
+
 table {
   width: 100%;
   margin: 30px auto 0;
   border-collapse: collapse;
-}
-
-table thead {
-  height: auto;
 }
 
 table th {
@@ -74,6 +74,20 @@ table th {
   font-size: 18px;
   font-weight: 600;
 }
+
+td,
+th {
+  height: 40px;
+  text-align: left;
+}
+
+/* THEAD */
+
+table thead {
+  height: auto;
+}
+
+/* TBODY */
 
 table tbody {
   width: 100%;
@@ -84,6 +98,7 @@ table tbody {
 
 table tbody tr {
   display: block;
+  padding: 0 10px;
 }
 
 table tbody tr:nth-child(odd) {
@@ -92,15 +107,4 @@ table tbody tr:nth-child(odd) {
 
 table tbody td {
   width: 100%;
-}
-
-.consolas {
-  font-family: "Courier New", Courier, monospace;
-}
-
-td,
-th {
-  height: 40px;
-  text-align: left;
-  padding: 10px;
 }
