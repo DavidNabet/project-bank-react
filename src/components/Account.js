@@ -7,7 +7,7 @@ const Account = ({ account }) => {
           <tr>
             <th>{name}</th>
             <th></th>
-            <th>{balance} €</th>
+            <th className="monospace">{balance} €</th>
           </tr>
         </thead>
         <tbody>

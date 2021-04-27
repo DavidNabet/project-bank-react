@@ -60,13 +60,14 @@ header .logged img {
 
 /* Contenu */
 .monospace {
-  font-family: "Courier New", Courier, monospace;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 table {
   width: 100%;
   margin: 30px auto 0;
-  border-collapse: collapse;
+  display: flex;
+  flex-direction: column;
 }
 
 table th {
@@ -75,30 +76,34 @@ table th {
   font-weight: 600;
 }
 
-td,
-th {
-  height: 40px;
-  text-align: left;
+table thead tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  min-height: 50px;
+  width: 95%;
+  margin: 0 auto;
 }
 
 /* THEAD */
 
-table thead {
-  height: auto;
-}
-
 /* TBODY */
 
 table tbody {
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 }
 
 table tbody tr {
-  display: block;
+  display: flex;
+  height: 40px;
   padding: 0 10px;
+  align-items: center;
+  justify-content: space-around;
 }
 
 table tbody tr:nth-child(odd) {
@@ -106,5 +111,14 @@ table tbody tr:nth-child(odd) {
 }
 
 table tbody td {
-  width: 100%;
+  text-align: left;
+  flex: 3;
+}
+
+table tbody td:first-child {
+  flex: 1;
+}
+
+table tbody td:last-child {
+  text-align: right;
 }
