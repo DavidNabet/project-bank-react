@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 const Account = ({ account }) => {
   const { name, balance, color, operations } = account;
   return (
@@ -18,6 +20,9 @@ const Account = ({ account }) => {
               <td className="monospace">{`${amount.toFixed(2)}€`}</td>
             </tr>
           ))}
+          <Button>
+            <label>See more</label>
+          </Button>
         </tbody>
       </table>
     </>

@@ -119,9 +119,26 @@ table tbody td {
 }
 
 table tbody td:first-child {
+  color: rgba(0, 0, 0, 0.4);
   flex: 1;
 }
 
 table tbody td:last-child {
   text-align: right;
+}
+
+/* Button */
+button {
+  border: none;
+  background-color: var(--odd);
+  padding: 7px 15px;
+  color: #545454;
+  align-self: flex-end;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+button label {
+  text-transform: uppercase;
+  font-size: 13px;
 }
