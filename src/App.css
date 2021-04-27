@@ -1,0 +1,106 @@
+/* Other rules */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --header: #273338;
+  --bg: #eceff1;
+  --text: ##919da2;
+  --odd: #f7f7f7;
+  --dim: 46px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  background-color: var(--bg);
+}
+
+/* Titles */
+h1 {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: var(--header);
+  padding: 20px 0;
+  color: #fff;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logged span {
+  font-size: 18px;
+  line-height: 18px;
+  margin-right: 30px;
+}
+
+header .logged img {
+  vertical-align: middle;
+  width: var(--dim);
+  height: var(--dim);
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+/* Contenu */
+table {
+  width: 100%;
+  margin: 30px auto 0;
+  border-collapse: collapse;
+}
+
+table thead {
+  height: auto;
+}
+
+table th {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+table tbody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+table tbody tr {
+  display: block;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: var(--odd);
+}
+
+table tbody td {
+  width: 100%;
+}
+
+.consolas {
+  font-family: "Courier New", Courier, monospace;
+}
+
+td,
+th {
+  height: 40px;
+  text-align: left;
+  padding: 10px;
+}
