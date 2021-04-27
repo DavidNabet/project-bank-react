@@ -76,18 +76,21 @@ table th {
   font-weight: 600;
 }
 
+/* THEAD */
+
+table thead {
+  border-radius: 5px;
+}
+
 table thead tr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-radius: 20px;
   min-height: 50px;
   width: 95%;
   margin: 0 auto;
 }
-
-/* THEAD */
 
 /* TBODY */
 
