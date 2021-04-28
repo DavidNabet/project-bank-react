@@ -9,7 +9,7 @@ const Account = ({ account }) => {
           <tr>
             <th>{name}</th>
             <th></th>
-            <th className="monospace">{balance} €</th>
+            <th className="monospace">{balance.toFixed(2)} €</th>
           </tr>
         </thead>
         <tbody>
