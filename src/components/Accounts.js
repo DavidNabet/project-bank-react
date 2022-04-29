@@ -3,9 +3,9 @@ import Account from "./Account";
 const Accounts = ({ accounts }) => {
   return (
     <div className="content">
-      {accounts.map((table, i) => (
-        <Account key={i} account={table} />
-      ))}
+      {/* {accounts.map((table, i) => ( */}
+      <Account account={accounts[1]} />
+      {/* ))} */}
     </div>
   );
 };
